@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt" >
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>ToDo AngularJS</title>
+
+    <link rel="stylesheet" href="./node_modules/materialize-css/dist/css/materialize.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <link rel="stylesheet" href="app/style.css">
+    
+    <script src="./node_modules/jquery/dist/jquery.js"></script>
+    <script src="./node_modules/angular/angular.js"></script>
+    <script src="./node_modules/@uirouter/angularjs/release/angular-ui-router.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.2/moment-with-locales.js"></script>
+    <script src="./node_modules/angular-animate/angular-animate.js"></script>
+    <script src="./node_modules/underscore/underscore-min.js"></script>
+
+
+</head>
+
+<body ng-app="appModule">
+
+    <ui-view></ui-view>
+            
+
+
+   <script src="app/directives/components.module.js"></script>
+   <script src="app/directives/navbar/navbar.directive.js"></script>
+   
+   <script src="app/app.js"></script>
+   <script src="app/routers.js"></script>   
+  <script src="app/services/user.service.js"></script>
+ 
+   <script src="app/controllers/home.controller.js"></script>
+   <script src="app/controllers/list.controller.js"></script>
+   <script src="app/controllers/login.controller.js"></script>
+            
+    <script src="./node_modules/materialize-css/dist/js/materialize.js"></script>    
+</body>
+</html>

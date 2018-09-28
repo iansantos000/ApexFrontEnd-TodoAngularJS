@@ -1,0 +1,48 @@
+<div ng-controller="ListController">
+    <form>
+        <div class="row">
+            <div class="col s12">
+                <div class="row">
+                    <div class="input-field col s10">                
+                            <input  class="add-input" placeholder="Adicionar Tarefa..." type="text"
+                                    ng-model="formToDoText" required/>
+                    </div>
+                    <div class="input-field col  s2">
+                        <a ng-click="addToDo()" class="btn-floating btn-large waves-effect waves-light red">
+                            <i class="material-icons">add</i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </form>
+    <div>
+
+        <ul class="collection">
+            <li class="collection-item" ng-repeat="ToDo in ToDos" ng-show="mostrarToDo" > 
+                <div class="row" >
+                    <div class="col s10">
+                        <label>
+                            <input class="checkbox-ToDo" type="checkbox" ng-model="ToDo.done" />
+                            <span class="done-{{ToDo.done}}">{{ToDo.text}}</span>
+                        </label>
+                    </div>
+                    <div class="col center  s2">
+                        <a  ng-click="mostrarToDo=!mostrarToDo" 
+                            class="btn-floating btn-large waves-effect waves-light red">
+                            <i class="material-icons">delete_forever</i>                            
+                        </a>
+                    </div>
+                </div>
+            </li>
+        </ul>
+
+    </div>
+
+    <div>
+            <a ng-click="clearCompleted()" class="btn-floating btn-large waves-effect waves-light red">
+                    <i class="material-icons">delete_forever</i>
+                </a>
+    </div>
+
+</div>

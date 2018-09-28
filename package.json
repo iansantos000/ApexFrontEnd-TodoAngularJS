@@ -1,0 +1,29 @@
+{
+  "name": "todo",
+  "version": "1.0.0",
+  "description": "exercicio AngularJS ToDo",
+  "main": "index.js",
+  "scripts": {
+    "serve": "browser-sync start --server -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/iansantos000/ApexFrontEnd-TodoAngularJS.git"
+  },
+  "author": "IanSantos00",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/iansantos000/ApexFrontEnd-TodoAngularJS/issues"
+  },
+  "homepage": "https://github.com/iansantos000/ApexFrontEnd-TodoAngularJS#readme",
+  "dependencies": {
+    "@uirouter/angularjs": "^1.0.7",
+    "angular": "^1.7.2",
+    "angular-animate": "^1.7.4",
+    "install": "^0.12.1",
+    "jquery": "^3.3.1",
+    "materialize-css": "^1.0.0-rc.2",
+    "npm": "^6.4.1",
+    "underscore": "^1.9.1"
+  }
+}
